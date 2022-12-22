@@ -1,7 +1,34 @@
 ---
 title: Setup
 ---
-FIXME
+> ## Github repo
+> The following instructions are also given in the README: [https://github.com/FNALLPC/statistics-das/blob/master/README.md](https://github.com/FNALLPC/statistics-das/blob/master/README.md)
+{: .callout}
+
+## Setting up
+
+We will be using the Vanderbilt JupyterHub.
+
+*Hint!* You may want to open this link in a new tab so that you can refer to these instructions for the next steps.
+
+Point your browser to: [https://jupyter.accre.vanderbilt.edu/](https://jupyter.accre.vanderbilt.edu/)
+
+If this is the first time using this JupyterHub, you should see:
+
+![](https://github.com/FNALLPC/statistics-das/raw/master/vanderbilt.png){: width="60%" .image-with-shadow}
+
+
+Click the "Sign in with Jupyter ACCRE" button. On the following page, select CERN as your identity provider and click the "Log On" button. Then, enter your CERN credentials or use your CERN grid certificate to autheticate.
+
+To start a new session, make sure the following drop-down options are selected:
+
+- Select a Docker image: Default ACCRE Image v5
+- Select a container size: 1 Core, 2GB RAM, 4 day timeout
+
+Then click the orange Spawn button. Now you should see the JupyterHub home directory. Click on "New" then "Terminal" in the top right to launch a new terminal.
+
+![](https://github.com/FNALLPC/statistics-das/raw/master/new_terminal.png){: width="25%" .image-with-shadow}
+
 
 
 {% include links.md %}
