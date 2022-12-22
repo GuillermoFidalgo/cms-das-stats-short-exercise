@@ -29,6 +29,17 @@ Then click the orange Spawn button. Now you should see the JupyterHub home direc
 
 ![](https://github.com/FNALLPC/statistics-das/raw/master/new_terminal.png){: width="25%" .image-with-shadow}
 
+In the terminal window, download the tutorials by typing:
+
+```
+git clone https://github.com/FNALLPC/statistics-das
+```
+*Hint! If you want to cut-and-paste this command in the terminal, highlight the link and copy it as you usually would (Ctrl+c). To paste it, use Shift+Ctrl+v*
+
+Now go back to the Jupyter directory tab. There should be a new directory called `statistics-das`. All of the tutorials and exercises are in there. Start by clicking on [`setup-libraries.ipynb`](https://github.com/FNALLPC/statistics-das/blob/master/setup-libraries.ipynb) and running it.
+
+
+
 
 
 {% include links.md %}
