@@ -3,7 +3,6 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 title: An Introduction to the Statistics Tools RooFit, RooStats, and combine
-math: true
 ---
 > ## Reference Material
 > - [Combine Manual](https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit/wiki)
