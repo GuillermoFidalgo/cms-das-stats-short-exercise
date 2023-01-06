@@ -88,8 +88,7 @@ math: True
 >>
 {: .solution}
 
-
-The task is to analyze the data in the last column of the [Table 4]({% link fig/HZZ4LTable.png%}), using `RooFit/RooStats`; in particular, to compute a confidence interval for the signal strength parameter $μ$, defined by
+The task is to analyze the data in the last column of the [Table 4]( {{"fig/HZZ4LTable.png" | relative_url }} ), using `RooFit/RooStats`; in particular, to compute a confidence interval for the signal strength parameter $μ$, defined by
 
  $$ n = \mu s + b_{ZZ} + b_{ZX} $$
 
