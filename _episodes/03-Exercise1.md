@@ -30,7 +30,7 @@ math: True
 >> 
 >> $$\mathcal{L}(n) = {\rm Poisson}(N;n) = \exp(-n)\; n^N / N! $$ 
 >>
->> What about that for $\hat{b}_{\*}$ and $\hat{s}$? If we were performing Bayesian calculations only, we would simply write down a prior density for both parameters, say a gamma density. However, we also want to perform frequentist calculations, which do not use priors. So, somehow, we need to mock up likelihoods for the background and the signal estimates.
+>> What about that for $\hat{b}_{*}$ and $\hat{s}$? If we were performing Bayesian calculations only, we would simply write down a prior density for both parameters, say a gamma density. However, we also want to perform frequentist calculations, which do not use priors. So, somehow, we need to mock up likelihoods for the background and the signal estimates.
 >> 
 >> An obvious choice is to model the likelihoods with Gaussians. But, since we know that the signal and background, in this problem, cannot be negative we need to work a bit harder. A standard way to proceed is to model each estimate as an (effective) Poisson count, $Q$ that has been scaled by a factor $q$, for example,
 >>

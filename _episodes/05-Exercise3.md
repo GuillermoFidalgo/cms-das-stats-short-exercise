@@ -414,3 +414,70 @@ combine -M HybridNew --frequentist --testStat LHC realistic_counting_experiment.
 {: .caution}
 
 
+Uses the F-C procedure to compute a confidence interval which could be either 1 sided or 2 sided. When systematics are included, the profiled likelihood is used to define the ordering rule.
+
+```
+%%bash
+combine -M FeldmanCousins  realistic_counting_experiment.txt 
+```
+
+> ## Feldman-Cousins limit output 
+> ```
+> >>> including systematics
+> >>> method used to compute upper limit is FeldmanCousins
+> >>> random number generator seed is 123456
+> loaded
+> Computing limit starting from observation
+>   would be r < 4 +/- 1
+>   would be r < 1.6 +/- 0.3
+>   would be r < 1.45 +/- 0.075
+>
+> -- FeldmanCousins++ -- 
+>Limit: r< 1.45 +/- 0.075 @ 95% CL
+>Done in 0.12 min (cpu), 0.12 min (real)
+>```
+> {: .output}
+{: .solution}
+
+
+To compute the lower limit instead of the upper limit specify the option `--lowerLimit`:
+
+```
+%%bash
+combine -M FeldmanCousins --lowerLimit realistic_counting_experiment.txt 
+```
+> ## Feldman-Cousins limit output 
+> ```
+> -- FeldmanCousins++ -- 
+>Limit: r> 0.05 +/- 0.05 @ 95% CL
+> ```
+{: .solution}
+
+### Part 3c.5 CombinedLimit: Compute the observed significance
+
+
+*This section on asymptotic CLs calculation is taken from the CombinedLimit manual by Giovanni Petrucciani.*
+
+Just use the Significance method and the program will compute the significance instead of the limit.
+
+```
+%%bash
+combine -M Significance realistic_counting_experiment.txt
+```
+
+You can also compute the significance with the HybridNew method. For the hybrid methods, there is no adaptive MC generation so you need to specify the number of toys to run (option `-T`), and you might want to split this computation in multiple jobs (instructions are below in the HybridNew section).
+
+```
+%%bash
+combine -M HybridNew --signif realistic_counting_experiment.txt
+```
+
+If you want to play with this method, you can edit `realistic_counting_experiment.txt` and change the number of observed events 3 (to get some non-zero significance), and execute
+
+```
+%%bash
+combine -M Significance realistic_counting_experiment.txt
+```
+
+
+
